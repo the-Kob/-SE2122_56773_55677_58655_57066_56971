@@ -17,5 +17,5 @@ Gabriela Costa (58655)
 
 ### Description 
 
-Our sprints are **1 week**, being the corresponding Scrum Master responsible to update all the documentation regarding their sprint (Burndown Charts, Product Backlog, Sprint Backlog and Scrum Board).
+Our sprints are **_1 week_**, being the corresponding Scrum Master responsible to update all the documentation regarding their sprint (Burndown Charts, Product Backlog, Sprint Backlog and Scrum Board).
 
