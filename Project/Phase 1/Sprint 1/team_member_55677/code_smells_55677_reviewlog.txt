@@ -12,3 +12,9 @@ João Vieira 56971:
 Regarding the Inappropriate Intimacy & Duplicate Code
 
 - I agree, theres no use having methods that do the same thing, good work.
+
+Gabriela Costa 58625:
+
+Regarding Inappropriate Intimacy & Duplicate Code
+
+-I understand your solution, but I think an equally valid way to fix this (and one that requires less changing around) would simply be deleting the lines 42 to 56 of the method fromTerms(), and replacing its return statement with builder.terms(terms). This portion of the code essentially renders the terms() method useless, but I don't see the point in merging the ComplexSearchQueryBuilder class with ComplexSearchQuery considering they both serve valid purposes. From what I understand, ComplexSearchQuery parses and analyzes a given query, and ComplexSearchQueryBuilder creates one from scratch.
