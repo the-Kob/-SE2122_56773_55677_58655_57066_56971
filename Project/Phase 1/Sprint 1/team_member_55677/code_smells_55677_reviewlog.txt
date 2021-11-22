@@ -1,0 +1,4 @@
+Team member 57066 (Guilherme Pereira):
+  Regarding the Dead code code smell
+  
+  "I agree with your assessment since dead code is to be removed. If they wanted to use those variables in the future, they should add them then."
