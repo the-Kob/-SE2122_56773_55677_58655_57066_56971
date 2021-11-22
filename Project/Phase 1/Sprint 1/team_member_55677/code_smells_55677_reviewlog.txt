@@ -6,3 +6,9 @@ Team member 57066 (Guilherme Pereira):
 Gonçalo Virgínia 56773:
 
 - Duplicated Code: Yep, sounds good, simple fix
+
+João Vieira 56971:
+
+Regarding the Inappropriate Intimacy & Duplicate Code
+
+- I agree, theres no use having methods that do the same thing, good work.
