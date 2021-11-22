@@ -16,3 +16,8 @@ Team member 56971 (João Vieira):
   
   "I agree with your assement, we should delete this snippet as it has no use for this aplication and it makes code look more bloated. 
   If it is needed at a future point of project it should  be added then not before." -19:54 22/11
+
+Team member 55677 (Miguel Real):
+  Regarding the Large Class code smell
+  
+    "I agree with this assessment, from examining the BibEntry class I got the impression it is a giant of a class that does way too much. I think the keyword/field         related behaviour classes is a good idea since it splits the responsibilities of the original class." -23:05 22/11
