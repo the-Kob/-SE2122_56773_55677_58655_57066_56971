@@ -7,6 +7,8 @@ Team member 56773 (Gonçalo Virgínia):
   
     My response:
     "Those are good points. I also noticed that I missed an original method in the class itself. I'll proceed to change the code smell." -21:04 22/11
+    
+  "Yep, the long method code smell looks good." -22:49 22/11
  
  
 Team member 56971 (João Vieira):
