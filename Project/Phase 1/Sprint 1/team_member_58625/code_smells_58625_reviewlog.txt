@@ -1,0 +1,4 @@
+Team member 55677 (Miguel Real):
+  Regarding the Switch Statement code smell
+
+  "After reviewing the code, I agree with the code smell and I find the proposed solution to be very adequate. Good work!" -23:47 22/11
