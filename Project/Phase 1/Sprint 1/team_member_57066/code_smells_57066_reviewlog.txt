@@ -4,6 +4,9 @@ Team member 56773 (Gonçalo Virgínia):
   "This class cannot simply be transformed into a record since there are exceptions in its' constructor, and it would hinder its' extensibility. 
   Also data classes aren't a problem as is, it normally stems from the repeated use of their data in other classes in similar ways, which means that that logic should be put into   the "data class" itself. 
   Try to analyse if that's the case and if it's possible to move the logic." -19:30 22/11
+  
+    My response:
+    "Those are good points. I also noticed that I missed an original method in the class itself. I'll proceed to change the code smell." -21:04 22/11
  
  
 Team member 56971 (João Vieira):
