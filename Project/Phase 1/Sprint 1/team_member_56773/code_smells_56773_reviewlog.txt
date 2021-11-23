@@ -1,1 +1,3 @@
-Delete later.
+Team Meber 56971, João Vieira:
+  Regarding Long Parameter List:
+  "Yes I agree that parameter lists of these 3 constructors are too long, I also think both your proposed fixes will probably be necesserary in some cases. For example in the GuiPreferences.java constructor, even if we bundle the position and size parameters into its own class, we will still have a paramters list of size 6, which is still too long."
