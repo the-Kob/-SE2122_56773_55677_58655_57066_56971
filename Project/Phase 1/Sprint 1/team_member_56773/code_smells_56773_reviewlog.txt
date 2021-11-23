@@ -4,4 +4,4 @@ Team Member 56971, João Vieira:
 
 Team Member 55677, Miguel Real:
   Regarding Comments/Dead Code:
-  "It seems the developers taking care of this feature may have forgotten about the commented code, which is an unfortunate but common problem in larger projects. I agree with the problem itself and the proposed solution, and mark this task as Complete."
+  "It seems the developers taking care of this feature may have forgotten about the commented code, which is an unfortunate but common problem in larger projects. I agree with the problem itself and the proposed solution, and mark this task as Complete." -18:13 23/11
