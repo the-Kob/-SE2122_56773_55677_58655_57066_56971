@@ -22,3 +22,8 @@ Team member 55677 (Miguel Real):
   
     "I agree with this assessment, from examining the BibEntry class I got the impression it is a giant of a class that does way too much. 
     I think the keyword/field related behaviour classes is a good idea since it splits the responsibilities of the original class." -23:05 22/11
+    
+Team member 58625 (Gabriela Costa):
+  Regarding the Long Method code smell (code smell #13)
+  
+  "Seems appropriate, usually this ends up being the case when dealing with heavily commented methods, it tends to indicate that there is way too much logic crammed into one single method. I agree with your fix!" -20:40 23/11
