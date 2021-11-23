@@ -5,3 +5,7 @@ Team Member 56971, João Vieira:
 Team Member 55677, Miguel Real:
   Regarding Comments/Dead Code:
   "It seems the developers taking care of this feature may have forgotten about the commented code, which is an unfortunate but common problem in larger projects. I agree with the problem itself and the proposed solution, and mark this task as Complete." -18:13 23/11
+
+Team Member 57066, Guilherme Pereira:
+  Regarding Long Method:
+  "I like this assessment of the code smell. Besides being valid due to the 143 lines that the method is composed of, your fix seems like a good approach to fixing it."
