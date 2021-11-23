@@ -1,1 +1,8 @@
+Team Member 58625 (Gabriela Costa)
 
+Regarding the Dead Code code smell (code smell #10)
+
+"I don't think this can be classified as a case of dead code. This class is used, namely in /src/main/java/org/jabref/logic/autosaveandbackup/AutosaveManager.java, and /src/main/java/org/jabref/gui/dialogs/AutosaveUiManager.java.
+In the first class, the AutosaveEvent object is used as a parameter to the listen() method, which needs it in order to identify the type of event triggered (in this case, an AutosaveEvent).
+In the second class, the AutosaveEvent object allows us to place an event into the event bus to which the listen() method subscribes to.
+In short, even though this class is empty, it is not dead code, since it serves a very specific purpose." -19:55 -23/11
