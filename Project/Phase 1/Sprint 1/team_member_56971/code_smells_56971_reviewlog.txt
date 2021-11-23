@@ -11,7 +11,14 @@ Team Member 56971 (João Vieira):
 
     in response to Team Member 58625 (Gabriela Costa) regarding The Dead Code smell (code smell #10)
 
-    "I disagree, yes this class is used, I mentioned it my description but the reason I classified this as dead code is that the class is empty and adds no new functionality to the application. Its only purpose is to satisfy verifications, therefore believe this should not exist, at very least it could be something like a interface.A empty class is basically useless" -20:55 -23/11
+    "I disagree, yes this class is used, I mentioned it my description but the reason I classified this as dead code is that the class is empty and adds no new functionality to the application. Its only purpose is to satisfy verifications, therefore believe this should not exist, at very least it could be something like a interface.A empty class is basically useless" -20:15 -23/11
+
+Team Member 58625 (Gabriela Costa)
+
+    In reply to Team Member 56971 (João Vieira), regarding the Dead Code code smell (code smell #10)
+    
+    "Forgot to mention this in my previous comment, but the path provided for the AutosaveEvent.java class is incorrect. It should be SE2122_55677_56773__56971_57066_58655/src/main/java/org/jabref/model/database/event/AutosaveEvent.java
+Regarding your reply, I don't see your point. The class serves a purpose, the code will not work without it. The functionality it provides is working as an event type, necessary for 2 other methods. And it cannot be an interface, the class is instantiated in a method inside the AutosaveManager class. This project uses the com.google.common.eventbus package, which allows the creation of event subscriber methods and event producing methods. Those methods require an event object that can be posted to the event bus. Check out the following link for documentation on this package, maybe it will help clear things up: https://guava.dev/releases/16.0/api/docs/com/google/common/eventbus/package-summary.html" -20:20 23/11
 
 Gonçalo Virgínia (56773):
 
