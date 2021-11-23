@@ -2,3 +2,9 @@ Team member 55677 (Miguel Real):
   Regarding the Switch Statement code smell
 
   "After reviewing the code, I agree with the code smell and I find the proposed solution to be very adequate. Good work!" -23:47 22/11
+
+Team member 57066 (Guilherme Pereira):
+  Regarding the Duplicate Code code smell
+  
+  "I agree with your assessment and solution but I have somehing to point out. I think that when choosing between which of the 2 methods you want to delete, you should choose the one with the name that best describes the variable in the context it is used. 
+  If only both are equally well named methods should you give the choice to a coin flip." -00:10 23/11
