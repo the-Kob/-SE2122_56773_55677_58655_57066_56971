@@ -21,7 +21,7 @@ Regarding Inappropriate Intimacy & Duplicate Code
 This portion of the code essentially renders the terms() method useless, but I don't see the point in merging the ComplexSearchQueryBuilder class with ComplexSearchQuery considering they both serve valid purposes. 
 From what I understand, ComplexSearchQuery parses and analyzes a given query, and ComplexSearchQueryBuilder creates one from scratch. -23:49 22/11
 
-Miguel Rea 55677:
+Miguel Real 55677:
 
 Regarding Inappropriate Intimacy & Duplicate Code
 
