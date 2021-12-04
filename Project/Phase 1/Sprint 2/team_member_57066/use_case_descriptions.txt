@@ -1,0 +1,55 @@
+Name: AddManualEntry
+Id: UC05.0
+Description: The user adds a new entry.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: AddIDEntry
+Id: UC05.1
+Description: The user adds a new entry with a given ID.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: AddRefTextEntry
+Id: UC05.2
+Description: The user adds a new entry by providing a reference text.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: AddOnlineEntry
+Id: UC05.3
+Description: The user adds a new entry from within the system databases.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: AddPDFEntry
+Id: UC05.4
+Description: The user adds a new entry with a given PDF file.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: AddBrowserEntry
+Id: UC05.5
+Description: The user adds a new entry with Jabref's browser extension.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: AddInspWindEntry
+Id: UC05.6.1
+Description: The user selects which entries from an assortment of them and chooses which ones to add in an inspection window.
+Actors:
+    Main - User
+    Secondary - None
+
+Name: ManImportFilters
+Id: UC05.6.2
+Description: The user defines and uses it's own import filters.
+Actors:
+    Main - User
+    Secondary - None
