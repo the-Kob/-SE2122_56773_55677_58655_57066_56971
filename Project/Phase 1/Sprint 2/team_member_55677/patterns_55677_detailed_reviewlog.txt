@@ -3,3 +3,10 @@ Gabriela Costa 58625:
 Regarding the Template Method pattern:
 
 "I agree with your explanation. It seems clear that the different implementations of the transform() method design the outline of the method while leaving part of the implementation to subclasses." -20:33 03/12
+
+
+Guilherme Pereira 57066:
+
+Regarding the Prototype pattern:
+
+"I find your explanation really concise and easy to understand. Also, my opinion is a clone of yours (ahah funny): I also think this is a pretty raw implementation of the Prototype pattern, good job!" -21:33 04/12
