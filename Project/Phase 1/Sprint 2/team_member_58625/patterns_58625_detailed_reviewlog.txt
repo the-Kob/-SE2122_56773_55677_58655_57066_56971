@@ -2,3 +2,8 @@ Team member 55677 (Miguel Real):
   Regarding the Template Method Pattern:
   
   "While I agree with the pattern and the justification, I just wanted to point out that the methods acting as steps of the algorithm in the template method aren't necessarily abstract, though they usually are (this makes sense as we can imagine a situation where all the subclasses of our system share at least one common step in the algorithm, this step would be implemented directly on the superclass to take advantage of inheritance and avoid code duplication)." -11:04 04/12
+
+Team member 56971 (João Vieir):
+  Regarding The Facede Pattern - Design Patter 4:
+  
+  "Your assessment looks correct, especially when you look to methods you provided." - 18:01 04/12
