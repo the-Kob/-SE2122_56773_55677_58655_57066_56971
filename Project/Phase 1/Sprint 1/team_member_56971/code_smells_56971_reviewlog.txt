@@ -28,3 +28,11 @@ Team Member 56971 (João Vieira):
 Gonçalo Virgínia (56773):
 
     Code smell #11 (Duplicated Code): "Sounds good, simple fix."
+    
+    
+    
+Team Member 58625 (Gabriela Costa)
+
+    Regarding the Switch Statements code smell (code smell #10)
+    
+    "Indeed, the code is quite bloated with all those ifs. It seems like it could be simplified with some refactoring." -10:55 04/12
