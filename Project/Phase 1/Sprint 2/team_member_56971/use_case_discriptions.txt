@@ -1,0 +1,63 @@
+Name: LoadAndSaveLibrariesInBibTeXAndBiblatex
+Id: UC04.1.0
+Description: User load and saves his libraries directly in the BibTeX/biblatex .bib format
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Name: ExportToMicrosoftWord
+Id: UC04.1.1
+Description: User can export his desired entries to Office 2007 XML format 
+Actors:
+    Main - User
+    Secondary - None
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Name: OpenOffice/LibreOfficeIntegration
+Id: UC04.1.2
+Description: User can insert citations format a Bibliography in an OpenOffice or LibreOffice Writer document from JabRef.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Name: PushToExternalEditorApplication
+Id: UC04.1.3
+Description: User can push desired entreis to a external editor application.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Name: SharingABib(la)TeX
+Id: UC04.2.0
+Description: User can share his Bib(la)TeX library
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Name: ExportFile
+Id: UC04.2.1
+Description: User can export his entries into a file.
+Actors:
+    Main - User
+    Secondary - None
+
+Name: CustomizeExportFilters
+Id: UC04.2.1.1
+Description: User can define and use his own export filters.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Name: ConnectToASharedSQLDatabase
+Id: UC04.2.2
+Description: User can connect to a remote database
+Actors:
+    Main - User
+    Secondary - None
+
+Name: ConfigurationOfSSLConnectionToTheDatabase
+Id: UC04.2.2.1
+Description: User can configurate his connectio to the database
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
