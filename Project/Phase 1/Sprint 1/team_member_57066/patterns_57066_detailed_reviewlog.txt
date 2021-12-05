@@ -9,3 +9,9 @@ Miguel Real 55677:
 Regarding the Observer Pattern
 
 "Smooth sailing, moved to Completed." -12:41 05/12
+
+João Vieira 56971:
+
+Regarding the Factory Pattern:
+
+"Your explanation makes sense. It definitely is a different implementation of the Factory Pattern, but the essence and goal is still there. Nice catch." -14:57 05/12
