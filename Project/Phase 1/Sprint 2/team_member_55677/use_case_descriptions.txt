@@ -1,0 +1,121 @@
+Miguel Real 55677
+----------------------------------------------------------------------
+Name: Auto-fetch info from online database
+Id: UC03.0.1
+Description: Automatically fetches information on entry from online databases.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Edit entry content
+Id: UC03.0.2
+Description: Edits content of an entry.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Link entry to file in system
+Id: UC03.0.3
+Description: Links entry to a file on the user's system.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Unlink entry to file in system
+Id: UC03.0.4
+Description: Unlinks entry to a file on the user's system.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Mark and grade entry
+Id: UC03.0.5
+Description: Allows the user to mark and rate the entry according to several criteria.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Set fields
+Id: UC03.0.6.1
+Description: Allows the user to set the content of a field.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Rename field
+Id: UC03.0.6.2
+Description: Renames a field.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Clear field
+Id: UC03.0.6.3
+Description: Removes a field from the entries.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Append to fields
+Id: UC03.0.6.4
+Description: Allows a user to add to the content of a field.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Remove keyword
+Id: UC03.0.7.1
+Description: Removes a keyword.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Add keyword
+Id: UC03.0.7.2
+Description: Adds a keyword.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Display keywords appearing in all entries
+Id: UC03.0.7.3.1
+Description: Allows the user to make it so only keywords that appear in all entries appear in the keyword list.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Display keywords appearing in any entry
+Id: UC03.0.7.3.2
+Description: Allows the user to make it so all keywords appear in the keyword list.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Search for an entry
+Id: UC03.1
+Description: Searches library for an entry.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Cleanup entries
+Id: UC03.2
+Description: Cleans up the entries in the library according to parameters the user can set.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Find duplicate entries
+Id: UC03.3
+Description: Finds duplicate entries in the library.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Merge entries
+Id: UC03.4
+Description: Merges two entries into one, how differences in each are shown can be set by the user.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------

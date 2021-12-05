@@ -1,0 +1,11 @@
+Team member 55677 (Miguel Real)
+  Regarding the Adapter Pattern:
+  "Fairly standard implementation of an Adapter, as you said. Marked as Completed. 👍" -12:42 05/12
+  
+Team member 57066 (Guilherme Pereira)
+  Regarding the Observer Pattern:
+  "I agree with the assessment you made, nice catch!" -14:50 05/12
+  
+Team member 56971 (João Vieira)
+  Regarding the Command Pattern:
+  "I agree, this is a very obvious implementation of the command pattern." -14:44 05/12

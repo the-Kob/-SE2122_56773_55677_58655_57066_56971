@@ -1,1 +1,7 @@
-
+Team member 55677 (Miguel Real)
+  Regarding the Metrics Set 2:
+  "Excellent report and a very comprehensive and structured overview of the chosen metrics. I do want to point out a small typo in the section discussing the Polymorphism Factor that must have slipped by when writing. Otherwise solid work!" -13:15 05/12
+  
+Team member 58625 (Gabriela Costa)
+  In response to team member 55677, regarding the Metrics Set 2:
+  "Good catch, I'll correct it right away. Thanks for the review." -13:38 05/12

@@ -1,0 +1,100 @@
+Gabriela Costa 58625
+----------------------------------------------------------------------
+Name: Save library
+Id: UC02.0
+Description: Saves the current library.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Check library integrity
+Id: UC02.1
+Description: Checks the integrity of a library.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Create group/subgroup
+Id: UC02.2.1
+Description: Creates a group or subgroup.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Remove group/subgroup
+Id: UC02.2.2
+Description: Removes a group/subgroup.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Add entries to group
+Id: UC02.2.3
+Description: Adds an entry to the selected group.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Remove entries from group
+Id: UC02.2.4
+Description: Removes an entry from group.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Display intersection of groups
+Id: UC02.2.5
+Description: Sets the displayed entries of a group to be the intersection between itself and its subgroups.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Display union of groups
+Id: UC02.2.6
+Description: Sets the displayed entries of a group to be the union of it's own and its subgroup's.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Search groups
+Id: UC02.2.7
+Description: Searches for an entry in the selected fields.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Display all entries belonging to one or more of the selected groups
+Id: UC02.2.8.1
+Description: Sets the entries to be displayed when selecting multiple groups, in this case all from every group.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Display count of items in group
+Id: UC02.2.8.2
+Description: Displays how many items are in a group.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Change keyword separator
+Id: UC02.2.8.3
+Description: Changes the character used to separate keywords.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Automatically assign new entry to selected grouping
+Id: UC02.2.8.4
+Description: Allows the user to decide if new entries should be assigned automatically to the selected group.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Display only entries belonging to all selected groups
+Id: UC02.2.8.5
+Description: Sets the entries to be displayed when selecting multiple groups, in this case only the ones common to every group.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
