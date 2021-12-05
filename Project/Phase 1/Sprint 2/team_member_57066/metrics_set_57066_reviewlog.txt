@@ -1,0 +1,4 @@
+Team Member 58625 (Gabriela Costa)
+  Regarding the Metrics Set 5:
+  
+  "After reviewing both the report and the data collected, I think this provides a really informative overview of the JabRef project. Even though there is quite a large amount of data regarding the classes and methods, I think the graphs and extra tables definitely help clear things up. As for the report, I think you did a great job at summarizing everything that was found. Looking through the analysis of the methods and classes confirmed what we had noticed since we started tackling this project: the codebase overall shows good programming practices, with only a few outlier spots here and there. Nice work!" -13:15 05/12
