@@ -1,12 +1,18 @@
 Gabriela Costa 58625:
 
-Regarding the Facade Pattern
+    Regarding the Facade Pattern
 
-"I agree, it's especially clear in the last image that this class "hides" the complexity that the communication with the subsystem entails by providing a simple and clear interface for the client." -20:05 03/12
+    "I agree, it's especially clear in the last image that this class "hides" the complexity that the communication with the subsystem entails by providing a simple and clear interface for the client." -20:05 03/12
 
 
 Guilherme Pereira 57066:
 
-Regarding the Builder Pattern
+    Regarding the Builder Pattern
 
-"By the information you provide, this really seems like a builder pattern, good job!" -21:22 04/12
+    "By the information you provide, this really seems like a builder pattern, good job!" -21:22 04/12
+
+Gonçalo Virgínia 56773:
+
+    Regarding the Singleton Pattern
+
+    "Textbook singleton pattern, looks good."
