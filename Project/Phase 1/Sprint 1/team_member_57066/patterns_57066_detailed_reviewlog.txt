@@ -3,3 +3,9 @@ Gabriela Costa 58625:
 Regarding the Singleton Pattern
 
 "It seems like this is a clear use of the singleton pattern, with only one instance of the object available at all times, as well as only one way of accessing it. Good work!" -19:35 03/12
+
+Miguel Real 55677:
+
+Regarding the Observer Pattern
+
+"Smooth sailing, moved to Completed." -12:41 05/12
