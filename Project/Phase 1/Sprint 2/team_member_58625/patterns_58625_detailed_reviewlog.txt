@@ -1,9 +1,15 @@
 Team member 55677 (Miguel Real):
-  Regarding the Template Method Pattern:
+  Regarding the Template Method Pattern - Design Pattern 5:
   
   "While I agree with the pattern and the justification, I just wanted to point out that the methods acting as steps of the algorithm in the template method aren't necessarily abstract, though they usually are (this makes sense as we can imagine a situation where all the subclasses of our system share at least one common step in the algorithm, this step would be implemented directly on the superclass to take advantage of inheritance and avoid code duplication)." -11:04 04/12
 
-Team member 56971 (João Vieir):
-  Regarding The Facede Pattern - Design Patter 4:
+Team member 58625 (Gabriela Costa):
+  In response to Team Member 55677 in the Template Method Pattern - Design Pattern 5:
+  
+  "Yes, that's exactly what I meant with "includes several other abstract methods". The idea is that although it might have additional logic and even other non-abstract methods, it will include at least one abstract method (or it wouldn't really be a template method). I understand the confusion though, so I will reword this to clear things up." -12:30 05/12
+
+Team member 56971 (João Vieira):
+  Regarding The Façade Pattern - Design Pattern 4:
   
   "Your assessment looks correct, especially when you look to methods you provided." - 18:01 04/12
+
