@@ -1,0 +1,4 @@
+Team member 55677 (Miguel Real)
+  Regarding the Adapter Pattern:
+  "Fairly standard implementation of an Adapter, as you said. Marked as Completed. 👍" -12:42 05/12
+  
