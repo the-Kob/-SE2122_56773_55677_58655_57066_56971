@@ -10,3 +10,9 @@ Guilherme Pereira 57066:
 Regarding the Prototype pattern:
 
 "I find your explanation really concise and easy to understand. Also, my opinion is a clone of yours (ahah funny): I also think this is a pretty raw implementation of the Prototype pattern, good job!" -21:33 04/12
+
+João Vieira 56971:
+
+Regarding the Command Pattern:
+
+"I agree, this is a very obvious implementation of the command pattern." -14:44 05/12
