@@ -10,3 +10,10 @@ Guilherme Pereira 57066:
 Regarding the Prototype pattern:
 
 "I find your explanation really concise and easy to understand. Also, my opinion is a clone of yours (ahah funny): I also think this is a pretty raw implementation of the Prototype pattern, good job!" -21:33 04/12
+
+
+Gonçalo Virgínia 56773:
+
+Regarding the Builder pattern:
+
+"Your assessments and examples seem spot on." - 16:22 06/12
