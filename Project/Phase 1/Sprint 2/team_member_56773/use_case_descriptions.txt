@@ -1,0 +1,62 @@
+Name: Customize the citation key generator
+Id: UC01.0
+Description: The pattern used in the auto generation of citation labels can be set for each of the standard entry types.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Customize entry types
+Id: UC01.1
+Description: When customizing an entry type, you both define how its entry editor should look, and what it takes for JabRef to consider an entry complete. You can both make changes to the existing entry types, and define new ones.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Customize general fields
+Id: UC01.2
+Description: You can add an arbitrary number of tabs to the entry editor. These will be present for all entry types.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Customize key bindings
+Id: UC01.3
+Description: Customize key bindings.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Library properties
+Id: UC01.4
+Description: Each library can have specific properties that can be modified.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Entry preview setup
+Id: UC01.5
+Description: You can change the layout, style, and display the entry preview as a separate tab.
+Actors:
+    Main - User
+    Secondary - None
+----------------------------------------------------------------------
+Name: Manage external file types
+Id: UC01.6
+Description: A file type is specified by its name, a graphical icon, a file extension and an application to view the files. 
+Actors:
+    Main - User
+    Secondary - None
+
+Name: Manage protected terms
+Id: UC01.6
+Description: Manage protected terms.
+Actors:
+    Main - User
+    Secondary - None
+
+Name: The string editor
+Id: UC01.7
+Description: Strings can be edited by Library → Edit string constants or pressing a button in the toolbar.
+Actors:
+    Main - User
+    Secondary - None
