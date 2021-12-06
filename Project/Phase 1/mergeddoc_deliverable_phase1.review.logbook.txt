@@ -1,0 +1,238 @@
+Author: Miguel Real 55677 ------------------------------------------------------------------------------------------
+
+Code Smells 
+
+  Team member 57066 (Guilherme Pereira):
+    Regarding the Dead Code code smell:
+    "I agree with your assessment since dead code is to be removed. If they wanted to use those variables in the future, they should add them then."
+
+  Team member 56773 (Gonçalo Virgínia):
+    Regarding the Duplicated Code code smell: 
+    "Yep, sounds good, simple fix."
+
+  Team member 56971 (João Vieira):
+    Regarding the Inappropriate Intimacy & Duplicate Code
+    "I agree, theres no use having methods that do the same thing, good work."
+
+  Team member 58625 (Gabriela Costa):
+    Regarding Inappropriate Intimacy & Duplicate Code:
+    "I understand your solution, but I think an equally valid way to fix this (and one that requires less changing around) would simply be deleting the lines 42 to 56 of the method fromTerms(), and replacing its return statement with builder.terms(terms). 
+    This portion of the code essentially renders the terms() method useless, but I don't see the point in merging the ComplexSearchQueryBuilder class with ComplexSearchQuery considering they both serve valid purposes. 
+    From what I understand, ComplexSearchQuery parses and analyzes a given query, and ComplexSearchQueryBuilder creates one from scratch." -23:49 22/11
+
+  Team member 55677 (Miguel Real):
+    Regarding Inappropriate Intimacy & Duplicate Code:
+    "That is a good point. Proposed solution has been updated."
+
+Design Patterns
+
+  Team member 58625 (Gabriela Costa):
+    Regarding the Template Method pattern:
+    "I agree with your explanation. It seems clear that the different implementations of the transform() method design the outline of the method while leaving part of the implementation to subclasses." -20:33 03/12
+
+  Team member 57066 (Guilherme Pereira):
+    Regarding the Prototype pattern:
+    "I find your explanation really concise and easy to understand. Also, my opinion is a clone of yours (ahah funny): I also think this is a pretty raw implementation of the Prototype pattern, good job!" -21:33 04/12
+
+  Team member 56773 (Gonçalo Virgínia):
+    Regarding the Builder pattern:
+    "Your assessments and examples seem spot on." - 16:22 06/12
+
+Metrics
+
+  Team member 56773 (Gonçalo Virgínia):
+     "You're focusing too much on average values, try to dive into the extremes and relate them to potential/found code smells." -6/12 16h53
+
+  Team member 56971 (João Vieira):
+     "The first I read it, I thought the report was good, concise and easy to understand, but after re-reading it I can see what Gonçalo is saying, and I agree with him. 
+     Your boxplots show some extreme values that do not fit in the averages, but you never mention them or explore them further. Don´t know if this was your case but it was mine, the metrics reloaded plugin shows what values are within the plugin’s thresholds, they are number that are highlighted in red. In my case I didn't have any and if this was your case as well, I recommend you look at the graphs and make your own assessment about the thresholds in context of this project, because the thresholds that the plugin measures are too general and don't fit every project. 
+     You also don’t talk about any code smells that can be identified by your metrics. I recommend you into the places that have the highest values in your metrics.
+     In summary your report could be a little more detailed." -6/12 17:15
+
+Author: Gonçalo Virgínia 56773 ------------------------------------------------------------------------------------------
+
+Code Smells
+
+  Team Member 56971, João Vieira:
+    Regarding Long Parameter List:
+    "Yes I agree that parameter lists of these 3 constructors are too long, I also think both your proposed fixes will probably be necesserary in some cases. For example in the GuiPreferences.java constructor, even if we bundle the position and size parameters into its own class, we will still have a paramters list of size 6, which is still too long."
+
+  Team Member 55677, Miguel Real:
+    Regarding Comments/Dead Code:
+    "It seems the developers taking care of this feature may have forgotten about the commented code, which is an unfortunate but common problem in larger projects. I agree with the problem itself and the proposed solution, and mark this task as Complete." -18:13 23/11
+
+  Team Member 57066, Guilherme Pereira:
+    Regarding Long Method:
+    "I like this assessment of the code smell. Besides being valid due to the 143 lines that the method is composed of, your fix seems like a good approach to fixing it."
+
+Design Patterns
+
+  Team member 55677 (Miguel Real)
+    Regarding the Adapter Pattern:
+    "Fairly standard implementation of an Adapter, as you said. Marked as Completed. 👍" -12:42 05/12
+
+  Team member 57066 (Guilherme Pereira)
+    Regarding the Observer Pattern:
+    "I agree with the assessment you made, nice catch!" -14:50 05/12
+
+  Team member 56971 (João Vieira)
+    Regarding the Command Pattern:
+    "I agree, this is a very obvious implementation of the command pattern." -14:44 05/12
+
+Metrics
+
+  Team member 56971 (João Vieira):
+    "Your report is extremely detailed and very well put together. Good job." -6/12 17:52
+
+Author: João Vieira 56971 ------------------------------------------------------------------------------------------
+
+Code Smells
+
+  Team member 58625 (Gabriela Costa):
+     Regarding the Dead Code code smell (code smell #10)
+     "I don't think this can be classified as a case of dead code. This class is used, namely in /src/main/java/org/jabref/logic/autosaveandbackup/AutosaveManager.java, and /src/main/java/org/jabref/gui/dialogs/AutosaveUiManager.java.
+     In the first class, the AutosaveEvent object is used as a parameter to the listen() method, which needs it in order to identify the type of event triggered (in this case, an AutosaveEvent).
+     In the second class, the AutosaveEvent object allows us to place an event into the event bus to which the listen() method subscribes to.
+     In short, even though this class is empty, it is not dead code, since it serves a very specific purpose." -19:55 -23/11
+
+  Team Member 56971 (João Vieira):
+     In response to Team Member 58625 (Gabriela Costa) regarding The Dead Code smell (code smell #10)
+     "I disagree, yes this class is used, I mentioned it my description but the reason I classified this as dead code is that the class is empty and adds no new functionality to the application. Its only purpose is to satisfy verifications, therefore believe this should not exist, at very least it could be something like a interface.A empty class is basically useless" -20:15 -23/11
+
+  Team Member 58625 (Gabriela Costa)
+     In reply to Team Member 56971 (João Vieira), regarding the Dead Code code smell (code smell #10)
+     "Forgot to mention this in my previous comment, but the path provided for the AutosaveEvent.java class is incorrect. It should be SE2122_55677_56773__56971_57066_58655/src/main/java/org/jabref/model/database/event/AutosaveEvent.java
+  Regarding your reply, I don't see your point. The class serves a purpose, the code will not work without it. The functionality it provides is working as an event type, necessary for 2 other methods. And it cannot be an interface, the class is instantiated in a method inside the AutosaveManager class. This project uses the com.google.common.eventbus package, which allows the creation of event subscriber methods and event producing methods. Those methods require an event object that can be posted to the event bus. Check out the following link for documentation on this package, maybe it will help clear things up: https://guava.dev/releases/16.0/api/docs/com/google/common/eventbus/package-summary.html" -20:20 23/11
+
+  Team Member 56971 (João Vieira):
+     in response to Team Member 58625 (Gabriela Costa) regarding The Dead Code smell (code smell #10)
+     "You're right, I'm wrong. I will update this code smell task with a different one." -20:48 -24/11
+
+  Team member 56773 (Gonçalo Virgínia):
+    Regarding the Duplicated Code code smell: 
+    "Yep, sounds good, simple fix."
+
+  Team Member 58625 (Gabriela Costa):
+     Regarding the Switch Statements code smell (code smell #10)
+     "Indeed, the code is quite bloated with all those ifs. It seems like it could be simplified with some refactoring." -10:55 04/12
+
+  Team Member 58625 (Gabriela Costa):
+     Regarding the "String literals should not be duplicated" code smell (code smell #12)
+     "This is definitely a recurring problem in the JabRef project, the solution you presented seems adequate. Good work." -12:50 05/12
+
+Design Patterns
+
+  Team Member 58625 (Gabriela Costa):
+      Regarding the Facade Pattern
+      "I agree, it's especially clear in the last image that this class "hides" the complexity that the communication with the subsystem entails by providing a simple and clear interface for the client." -20:05 03/12
+
+   Team member 57066 (Guilherme Pereira):
+      Regarding the Builder Pattern
+      "By the information you provide, this really seems like a builder pattern, good job!" -21:22 04/12
+
+  Team member 56773 (Gonçalo Virgínia):
+     Regarding the Singleton Pattern
+     "Textbook singleton pattern, looks good."
+
+Metrics
+
+  Team member 57066 (Guilherme Pereira):
+    "Bro, be more careful when you write, check for errors more often. I spotted a few! With that being said, I felt that the report was concise and you made a nice evaluation with    the data you managed to collect. Nice work!" -15:21 05/12
+
+Author: Guilherme Pereira 57066 ------------------------------------------------------------------------------------------
+
+Code Smells
+
+  Team member 56773 (Gonçalo Virgínia):
+    Regarding the Data class code smell
+    "This class cannot simply be transformed into a record since there are exceptions in its' constructor, and it would hinder its' extensibility. 
+    Also data classes aren't a problem as is, it normally stems from the repeated use of their data in other classes in similar ways, which means that that logic should be put into   the "data class" itself. 
+    Try to analyse if that's the case and if it's possible to move the logic." -19:30 22/11
+    
+  Team member 57066 (Guilherme Pereira):
+    In reply to Team member 56773 (Gonçalo Virgínia):
+    "Those are good points. I also noticed that I missed an original method in the class itself. I'll proceed to change the code smell." -21:04 22/11
+  
+  Team member 56773 (Gonçalo Virgínia):
+    Regarding the Long Method code smell
+    "Yep, the long method code smell looks good." -22:49 22/11
+ 
+  Team member 56971 (João Vieira):
+    Regarding the Dead code/speculative generality code smell
+    "I agree with your assement, we should delete this snippet as it has no use for this aplication and it makes code look more bloated. 
+    If it is needed at a future point of project it should  be added then not before." -19:54 22/11
+
+  Team member 55677 (Miguel Real):
+    Regarding the Large Class code smell
+    "I agree with this assessment, from examining the BibEntry class I got the impression it is a giant of a class that does way too much. 
+    I think the keyword/field related behaviour classes is a good idea since it splits the responsibilities of the original class." -23:05 22/11
+
+  Team member 58625 (Gabriela Costa):
+    Regarding the Long Method code smell (code smell #13)
+    "Seems appropriate, usually this ends up being the case when dealing with heavily commented methods, it tends to indicate that there is way too much logic crammed into one single method. I agree with your fix!" -20:40 23/11
+
+
+Design Patterns
+
+  Team Member 58625 (Gabriela Costa):
+    Regarding the Singleton Pattern
+    "It seems like this is a clear use of the singleton pattern, with only one instance of the object available at all times, as well as only one way of accessing it. Good work!" -19:35 03/12
+
+  Team Member 55677, Miguel Real:
+    Regarding the Observer Pattern
+    "Smooth sailing, moved to Completed." -12:41 05/12
+
+  Team Member 56971, João Vieira:
+    Regarding the Factory Pattern:
+    "Your explanation makes sense. It definitely is a different implementation of the Factory Pattern, but the essence and goal is still there. Nice catch." -14:57 05/12
+
+Metrics
+
+  Team Member 58625 (Gabriela Costa)
+    Regarding the Metrics Set 5:
+    "After reviewing both the report and the data collected, I think this provides a really informative overview of the JabRef project. Even though there is quite a large amount of data regarding the classes and methods, I think the graphs and extra tables definitely help clear things up. As for the report, I think you did a great job at summarizing everything that was found. Looking through the analysis of the methods and classes confirmed what we had noticed since we started tackling this project: the codebase overall shows good programming practices, with only a few outlier spots here and there. Nice work!" -13:15 05/12
+
+Author: Gabriela Costa 58625 ------------------------------------------------------------------------------------------
+
+Code Smells
+
+  Team member 55677 (Miguel Real):
+    Regarding the Switch Statement code smell
+    "After reviewing the code, I agree with the code smell and I find the proposed solution to be very adequate. Good work!" -23:47 22/11
+
+  Team member 57066 (Guilherme Pereira):
+    Regarding the Duplicate Code code smell
+    "I agree with your assessment and solution but I have somehing to point out. I think that when choosing between which of the 2 methods you want to delete, you should choose the one with the name that best describes the variable in the context it is used. 
+    If only both are equally well named methods should you give the choice to a coin flip." -00:10 23/11
+  
+  Team member 55677 (Miguel Real):
+    Regarding the Long Method code smell
+    "Good catch and good fix!" -20:57 06/12
+
+Design Patterns
+
+  Team member 55677 (Miguel Real):
+    Regarding the Template Method Pattern - Design Pattern 5
+    "While I agree with the pattern and the justification, I just wanted to point out that the methods acting as steps of the algorithm in the template method aren't necessarily abstract, though they usually are (this makes sense as we can imagine a situation where all the subclasses of our system share at least one common step in the algorithm, this step would be implemented directly on the superclass to take advantage of inheritance and avoid code duplication)." -11:04 04/12
+
+  Team member 58625 (Gabriela Costa):
+    In response to Team Member 55677 in the Template Method Pattern - Design Pattern 5
+    "Yes, that's exactly what I meant with "includes several other abstract methods". The idea is that although it might have additional logic and even other non-abstract methods, it will include at least one abstract method (or it wouldn't really be a template method). I understand the confusion though, so I will reword this to clear things up." -12:30 05/12
+
+  Team member 56971 (João Vieira):
+    Regarding The Façade Pattern - Design Pattern 4:
+    "Your assessment looks correct, especially when you look to methods you provided." - 18:01 04/12
+
+  Team member 56773 (Gonçalo Virgínia):
+    Regarding The Prototype Pattern - Design Pattern 6
+    "Standard prototype pattern implementation, looks good." - 16:15 06/12
+
+Metrics
+
+  Team member 55677 (Miguel Real):
+    Regarding the Metrics Set 2
+    "Excellent report and a very comprehensive and structured overview of the chosen metrics. I do want to point out a small typo in the section discussing the Polymorphism Factor that must have slipped by when writing. Otherwise solid work!" -13:15 05/12
+
+  Team member 58625 (Gabriela Costa):
+    In response to team member 55677, regarding the Metrics Set 2
+    "Good catch, I'll correct it right away. Thanks for the review." -13:38 05/12
