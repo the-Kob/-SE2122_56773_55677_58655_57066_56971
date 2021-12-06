@@ -6,7 +6,7 @@ Gonçalo Virgínia 56773:
     
 João Vieira 56971:
 
-    "The first I read it, I tought the report was good, concise and easy to understand, but after re-reading it I can see what Gonçalo is saying and I agree with him. 
-    Your boxplots show some extreme values that do not fit in the averages, but you never mention them or explore them futher. Don´t know if this was your case but it was mine, the metrics realoaded plugin shows what values are within the plugins thresholds, they are number that are highlighted in red. In my case I didn't have any and if this was your case aswell, I recommend you look at the graphs and make your own assement about the thresholds in context of this project, beacuse the thresholds that the plugin measures are too general and don't fit every project. 
-    You also dont't talk about any code smells that can be idenfied by your metrics. I recommend you into the places that have the highest values in your metrics.
-    In summary your report  could be a little more  detailed" -6/12 17:15
+    "The first I read it, I thought the report was good, concise and easy to understand, but after re-reading it I can see what Gonçalo is saying, and I agree with him. 
+    Your boxplots show some extreme values that do not fit in the averages, but you never mention them or explore them further. Don´t know if this was your case but it was mine, the metrics reloaded plugin shows what values are within the plugin’s thresholds, they are number that are highlighted in red. In my case I didn't have any and if this was your case as well, I recommend you look at the graphs and make your own assessment about the thresholds in context of this project, because the thresholds that the plugin measures are too general and don't fit every project. 
+    You also don’t talk about any code smells that can be identified by your metrics. I recommend you into the places that have the highest values in your metrics.
+    In summary your report could be a little more detailed." -6/12 17:15
