@@ -8,3 +8,7 @@ Team member 57066 (Guilherme Pereira):
   
   "I agree with your assessment and solution but I have somehing to point out. I think that when choosing between which of the 2 methods you want to delete, you should choose the one with the name that best describes the variable in the context it is used. 
   If only both are equally well named methods should you give the choice to a coin flip." -00:10 23/11
+  
+Team member 55677 (Miguel Real):
+  Regarding the Long Method code smell
+  "Good catch and good fix!" -20:57 06/12
