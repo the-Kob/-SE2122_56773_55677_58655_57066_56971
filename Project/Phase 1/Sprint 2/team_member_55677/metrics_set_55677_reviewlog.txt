@@ -1,0 +1,3 @@
+Gonçalo Virgínia 56773:
+
+    You're focusing too much on average values, try to dive into the extremes and relate them to potential/found code smells.
