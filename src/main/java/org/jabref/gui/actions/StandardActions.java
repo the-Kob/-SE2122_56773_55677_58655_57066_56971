@@ -1,11 +1,11 @@
 package org.jabref.gui.actions;
 
-import java.util.Optional;
-
 import org.jabref.gui.icon.IconTheme;
 import org.jabref.gui.icon.JabRefIcon;
 import org.jabref.gui.keyboard.KeyBinding;
 import org.jabref.logic.l10n.Localization;
+
+import java.util.Optional;
 
 public enum StandardActions implements Action {
 
@@ -126,6 +126,9 @@ public enum StandardActions implements Action {
     COLLAPSE_ALL(Localization.lang("Collapse all")),
 
     NEW_ENTRY(Localization.lang("New entry"), IconTheme.JabRefIcons.ADD_ENTRY, KeyBinding.NEW_ENTRY),
+
+    SEARCH_GOOGLE(Localization.lang("Search in Google Scholar"), IconTheme.JabRefIcons.SEARCH),
+
     NEW_ARTICLE(Localization.lang("New article"), IconTheme.JabRefIcons.ADD_ARTICLE),
     NEW_ENTRY_FROM_PLAIN_TEXT(Localization.lang("New entry from plain text"), IconTheme.JabRefIcons.NEW_ENTRY_FROM_PLAIN_TEXT, KeyBinding.NEW_ENTRY_FROM_PLAIN_TEXT),
     LIBRARY_PROPERTIES(Localization.lang("Library properties")),

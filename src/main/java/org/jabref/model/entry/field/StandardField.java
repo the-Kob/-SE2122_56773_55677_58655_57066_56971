@@ -1,12 +1,8 @@
 package org.jabref.model.entry.field;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.EnumSet;
-import java.util.Optional;
-import java.util.Set;
-
 import org.jabref.gui.fieldeditors.FieldNameLabel;
+
+import java.util.*;
 
 /**
  * Standard BibTeX and BibLaTeX fields, as well as "normal" JabRef specific fields.
@@ -144,7 +140,9 @@ public enum StandardField implements Field {
     OWNER("owner"),
     TIMESTAMP("timestamp", FieldProperty.DATE),
     CREATIONDATE("creationdate", FieldProperty.DATE),
-    MODIFICATIONDATE("modificationdate", FieldProperty.DATE);
+    MODIFICATIONDATE("modificationdate", FieldProperty.DATE),
+    //TODO GAY
+    NEW_FIELD("new_field", FieldProperty.PERSON_NAMES);
 
 
     private final String name;
