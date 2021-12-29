@@ -16,7 +16,6 @@ import org.jabref.model.entry.BibEntryTypesManager;
 import org.jabref.model.entry.field.Field;
 import org.jabref.model.entry.field.InternalField;
 import org.jabref.model.entry.field.OrFields;
-import org.jabref.model.entry.field.StandardField;
 import org.jabref.preferences.PreferencesService;
 
 import javax.swing.undo.UndoManager;
@@ -61,7 +60,6 @@ public class RequiredFieldsTab extends FieldsEditorTab {
             // Entry type unknown -> treat all fields as required
             fields.addAll(entry.getFields());
         }
-        fields.add(StandardField.NEW_FIELD);
         return fields;
     }
 }
