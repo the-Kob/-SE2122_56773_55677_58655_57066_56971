@@ -1,0 +1,5 @@
+To implement the user story 1, changes were made in the following locations:
+
+    -addition of the line 466 in src/main/java/org/jabref/gui/JabRefFrame.java
+    -addition of the line 130 in src/main/java/org/jabref/gui/actions/StandardActions.java
+    -addition of the class SearchGoogleScholarAction in src/main/java/org/jabref/gui/importer/SearchGoogleScholarAction.java
