@@ -881,6 +881,50 @@ public class LibraryTab extends Tab {
 
         @Subscribe
         public void listen(FieldChangedEvent fieldChangedEvent) {
+            if(fieldChangedEvent.getField().getName().equalsIgnoreCase("comment")) {
+                // the string "value" passed as an argument holds all the text inside the comment field box
+                String newValue = fieldChangedEvent.getNewValue();
+                int index = newValue.indexOf('@');
+                if(index!=-1) {
+                    // if the index of the @ character is not -1, then it exists in the comment box somewhere
+                    // verify all the characters after @ and before a space
+                    StringBuilder ck = new StringBuilder();
+                    for(int i=index+1; i<newValue.length(); i++) {
+                        if(newValue.charAt(i)==' ')
+                            break;
+                        ck.append(newValue.charAt(i));
+                    }
+                    String citationKey = ck.toString();
+                    if(citationKey.length()>0) {
+                        // now we have the citation key, we must check if there is an entry with this key
+                        Iterator<BibEntry> iter = bibDatabaseContext.getEntries().iterator();
+                        // verify if the citation key obtain matches any entry
+                        BibEntry result = null;
+                        while (iter.hasNext()) {
+                            BibEntry curr = iter.next();
+                            if(curr.getCitationKey().isPresent()) {
+                                if(curr.getCitationKey().get().equalsIgnoreCase(citationKey)) {
+                                    result = curr;
+                                    break;
+                                }
+                            }
+                        }
+
+                        if(result!=null) {
+                            // we have found an entry that matches the citation key in the comment
+                            // now turn the key into a link
+                            UserDefinedFieldsTab fieldsEditorTab = (UserDefinedFieldsTab) entryEditor.getSelectedTab();
+                            Collection<Field> fields = fieldsEditorTab.getShownFields();
+                            for (Field field : fields) {
+                                if(field.getName().equalsIgnoreCase("comment")) {
+                                    String label = "@" + result.getCitationKey().get();
+                                    // the label would then be used to delineate what segment of text would become a hyperlink
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             if (fieldChangedEvent.getField().equals(StandardField.FILE)) {
                 List<LinkedFile> oldFileList = FileFieldParser.parse(fieldChangedEvent.getOldValue());
                 List<LinkedFile> newFileList = FileFieldParser.parse(fieldChangedEvent.getNewValue());
