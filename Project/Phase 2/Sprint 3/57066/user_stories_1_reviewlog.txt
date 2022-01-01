@@ -1,1 +1,4 @@
 
+Gonçalo Virgínia 56773:
+
+- While not being a feature that manipulates JabRef's internal structure, it is a simple and clean extension related to the program's main functionality.
