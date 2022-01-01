@@ -328,7 +328,7 @@ public class EntryEditor extends BorderPane {
         });
     }
 
-    private EntryEditorTab getSelectedTab() {
+    public EntryEditorTab getSelectedTab() {
         return (EntryEditorTab) tabbed.getSelectionModel().getSelectedItem();
     }
 

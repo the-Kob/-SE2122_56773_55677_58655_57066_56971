@@ -451,9 +451,14 @@ public class JabRefFrame extends BorderPane {
                 new HBox(
                         factory.createIconButton(StandardActions.NEW_LIBRARY, new NewDatabaseAction(this, prefs)),
                         factory.createIconButton(StandardActions.OPEN_LIBRARY, new OpenDatabaseAction(this, prefs, dialogService, stateManager)),
-                        factory.createIconButton(StandardActions.SAVE_LIBRARY, new SaveAction(SaveAction.SaveMethod.SAVE, this, prefs, stateManager))),
+                        factory.createIconButton(StandardActions.SAVE_LIBRARY, new SaveAction(SaveAction.SaveMethod.SAVE, this, prefs, stateManager))
+                ),
 
                 leftSpacer,
+
+                new HBox(
+                    factory.createIconButton(StandardActions.SEARCH_GOOGLE, new SearchGoogleScholarAction(this, dialogService, prefs, stateManager))
+                ),
 
                 globalSearchBar,
 
@@ -462,8 +467,6 @@ public class JabRefFrame extends BorderPane {
                 new HBox(
                         factory.createIconButton(StandardActions.NEW_ARTICLE, new NewEntryAction(this, StandardEntryType.Article, dialogService, prefs, stateManager)),
                         factory.createIconButton(StandardActions.NEW_ENTRY, new NewEntryAction(this, dialogService, prefs, stateManager)),
-
-                        factory.createIconButton(StandardActions.SEARCH_GOOGLE, new SearchGoogleScholarAction(this, dialogService, prefs, stateManager)),
 
                         createNewEntryFromIdButton(),
                         factory.createIconButton(StandardActions.NEW_ENTRY_FROM_PLAIN_TEXT, new ExtractBibtexAction(dialogService, prefs, stateManager)),
