@@ -454,11 +454,14 @@ public class JabRefFrame extends BorderPane {
                         factory.createIconButton(StandardActions.SAVE_LIBRARY, new SaveAction(SaveAction.SaveMethod.SAVE, this, prefs, stateManager))
                 ),
 
-                leftSpacer,
+                new Separator(Orientation.VERTICAL),
 
                 new HBox(
-                    factory.createIconButton(StandardActions.SEARCH_GOOGLE, new SearchGoogleScholarAction(this, dialogService, prefs, stateManager))
+                        factory.createIconButton(StandardActions.SEARCH_GOOGLE, new SearchGoogleScholarAction(this, dialogService, prefs, stateManager)),
+                        factory.createIconButton(StandardActions.NEW_ENTRY_FROM_GOOGLE_SCHOLAR, new NewEntryFromGoogleScholarAction(this, dialogService, prefs, stateManager))
                 ),
+
+                leftSpacer,
 
                 globalSearchBar,
 

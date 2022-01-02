@@ -128,6 +128,7 @@ public enum StandardActions implements Action {
     NEW_ENTRY(Localization.lang("New entry"), IconTheme.JabRefIcons.ADD_ENTRY, KeyBinding.NEW_ENTRY),
 
     SEARCH_GOOGLE(Localization.lang("Search in Google Scholar"), IconTheme.JabRefIcons.SEARCH),
+    NEW_ENTRY_FROM_GOOGLE_SCHOLAR("New entry from Google Scholar url", IconTheme.JabRefIcons.ADD_ENTRY),
 
     NEW_ARTICLE(Localization.lang("New article"), IconTheme.JabRefIcons.ADD_ARTICLE),
     NEW_ENTRY_FROM_PLAIN_TEXT(Localization.lang("New entry from plain text"), IconTheme.JabRefIcons.NEW_ENTRY_FROM_PLAIN_TEXT, KeyBinding.NEW_ENTRY_FROM_PLAIN_TEXT),
