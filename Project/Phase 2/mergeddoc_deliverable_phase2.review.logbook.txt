@@ -1,0 +1,11 @@
+Gonçalo Virgínia 56773:
+Regarding feature 1
+- While not being a feature that manipulates JabRef's internal structure, it is a simple and clean extension related to the program's main functionality.
+
+Miguel Real 55677:
+Regarding feature 1.1
+- Good proof of concept for the feature, understandably not as polished as would be ideal given time constraints.
+
+João Vieira, 56971:
+Regarding feature 2
+- Shame you didn't mnanage to implement this feature, would've been a very cool addition. Either way good effort.
